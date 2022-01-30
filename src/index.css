@@ -1,13 +1,138 @@
+@import '~antd/dist/antd.css';
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.home-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.migration-home {
+  height: 100%;
+}
+
+.CodeMirror {
+  height: auto;
+  border: 1px solid #eee;
+  max-height: 35px;
+}
+
+#root {
+  height: 100%;
+}
+
+.spinner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ant Table overwride */
+.ant-table-wrapper {
+  height: 100%;
+}
+
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
+.ant-table {
+  background-color: transparent !important;
+  flex: auto;
+  overflow: hidden;
+}
+
+.ant-table-body {
+  overflow: auto !important;
+  flex: auto;
+}
+
+.ant-spin-container,
+.ant-table-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+.ant-table-pagination-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Ant Design Overwrite */
+.ant-card-head-wrapper {
+  flex: 1 1 0;
+}
+
+/* Error Boundary */
+.error-wrapper {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-wrapper__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #282d37;
+}
+
+.error-wrapper__text {
+  font-size: 16px;
+  color: rgba(40, 45, 55, 0.8);
+}
+
+.error-wrapper__cta {
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #0085ff;
+  padding: 4px 16px;
+  margin-top: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.error-wrapper__cta a {
+  color: #fff;
 }
